@@ -61,7 +61,13 @@ for loop_except_zero in range(1,101):
 
 #Batch 2 (REDO)
 
-
+#Prog01: Create a program that ask user to input 2 numbers. Print the smaller number.
+answer_a = int(input("Enter first: "))
+answer_b = int(input("Enter second: "))
+if answer_a <  answer_b:
+    print(" first is the bigger number")
+elif answer_b < answer_a:
+    print("second is the bigger number")
 
 
 
