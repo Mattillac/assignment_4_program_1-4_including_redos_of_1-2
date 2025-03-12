@@ -145,7 +145,7 @@ unique_numbers()
 def display_only_first():
     numbers = [int(input(f"Enter number {count + 1}: ")) for count in range(10)] 
     filtered_numero = list(dict.fromkeys(numbers))
-print(filtered_numero)
+    print(filtered_numero)
 
 display_only_first()
 
