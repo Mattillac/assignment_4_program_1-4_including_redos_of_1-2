@@ -42,8 +42,14 @@ for how_many in range(10):
 print(result, "is the final sum")
 
 #Prog08: Create a program that ask user to input 10 numbers. Print how many are odd numbers.
+result = 0
+for how_many in range(10):
+    entered_num = int(input(f" enter num {how_many+1}: "))
+    if entered_num % 2 != 0:
+        result += 1
+print(f"Odd numbers: {result}")
 
-  
+
 
 #Batch 2 (REDO)
 #Batch 3
