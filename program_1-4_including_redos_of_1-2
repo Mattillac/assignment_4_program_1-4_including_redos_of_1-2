@@ -83,6 +83,22 @@ answer_b = int(input("Enter second: "))
 print(answer_a - answer_b)
 
 #Prog04: Create a program that ask user to input 2 numbers. Print the quotient of the two numbers without the decimal point
+answer_a = int(input("Enter first: ")) 
+answer_b = int(input("Enter second: "))
+print(answer_a // answer_b)
+
+#Prog05: Create a program that ask user to input 2 numbers. Print the remainder when the first number is divided by the second number.
+answer_a = int(input("Enter first: "))
+answer_b = int(input("Enter second: "))
+print(answer_a % answer_b)
+
+#Prog06: Create a program that ask user to input 10 numbers. Print the result of the first number minus all of the remaining numbers.
+result = 0
+for how_many in range(10):
+    entered_num = (int(input(f" Enter num {how_many+1}: ")))
+    how_many - 1
+print(f' The result is {how_many}')
+
 
 
 #Batch 3
