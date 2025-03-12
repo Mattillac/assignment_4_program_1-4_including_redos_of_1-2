@@ -99,6 +99,13 @@ for how_many in range(10):
     how_many - 1
 print(f' The result is {how_many}')
 
+#Prog07: Create a program that ask user to input 10 numbers. Print how many are even numbers.
+result = 0
+for how_many in range(10):
+    entered_num = int(input(f" Enter num {how_many+1}: "))
+    if entered_num % 2 == 0:
+        result += 1
+
 
 
 #Batch 3
