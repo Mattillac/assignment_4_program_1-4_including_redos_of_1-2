@@ -154,8 +154,10 @@ def keep_asking():
     numbers = []
 While True:
     entered_user = input("Enter a number(or type a non number to end): ")
-if not entered_use .isdigit():
+if not entered_user.isdigit():
     break
+(user_input)
+
 
 
 
