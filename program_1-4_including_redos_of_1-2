@@ -130,7 +130,11 @@ for count in range(start, end):
 #Batch 3
 
 #Prog01: Create a program that ask user to input 10 numbers. Display all numbers that don't have duplicate.
-
+result = 0
+for how_many in range(10);
+    entered_num = int(input(f' Enter num: {how_many+1}: '))
+    if entered_num != entered_num:
+print(entered_num)
 
 
 
