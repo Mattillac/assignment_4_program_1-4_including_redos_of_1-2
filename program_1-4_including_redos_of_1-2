@@ -170,28 +170,23 @@ def keep_asking():
 keep_asking()
 
 #Prog04: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the lowest number
+def lower_checker()
+numbers = []
 
-def lower_counter():
-    numbers = []
-    while True:
-        entered_user = input("Enter a number(or type a non number to end): ")
+while True:
+    entered_user = input("Enter a number (or type a non-number to end): ")
 
-        if not entered_user.isdigit():
-            print("Invalid input. ending now...")
-            break
-    
-        numero = (entered_user)
+    if not entered_user.isdigit():
+        if numbers:  # Check if the list is not empty
+            print("Lowest number", min(numbers))
+        else:
+            print("No numbers were entered.")
+        break
 
-        if numero in numbers:
-            print("Lowest number", {min(numbers)})
-        print("Not the lowest number")
-            numbers.append(numero)
-        
+    numero = int(entered_user)
+    numbers.append(numero)
 
-lower_counter()
-
-
-
+lower_checker()
 
 
 
