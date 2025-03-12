@@ -34,6 +34,16 @@ answer_a = int(input("Enter first: "))
 answer_b = int(input("Enter second: "))
 print(answer_a ** answer_b)
 
+#Prog07: Create a program that ask user to input 10 numbers. Print the sum of all the numbers.
+result = 0
+for how_many in range(10):
+    entered_num =int(input(f" Enter num {how_many+1}: "))
+    result += entered_num
+print(result, "is the final sum")
+
+#Prog08: Create a program that ask user to input 10 numbers. Print how many are odd numbers.
+
+  
 
 #Batch 2 (REDO)
 #Batch 3
