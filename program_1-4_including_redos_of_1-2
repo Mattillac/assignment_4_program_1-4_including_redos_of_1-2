@@ -170,21 +170,21 @@ def keep_asking():
 keep_asking()
 
 #Prog04: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the lowest number
-def lower_checker()
-numbers = []
+def lower_checker():
+    numbers = []
 
-while True:
-    entered_user = input("Enter a number (or type a non-number to end): ")
+    while True:
+        entered_user = input("Enter a number (or type a non-number to end): ")
 
-    if not entered_user.isdigit():
-        if numbers:  # Check if the list is not empty
-            print("Lowest number", min(numbers))
-        else:
-            print("No numbers were entered.")
-        break
+        if not entered_user.isdigit():
+            if numbers:  
+                print("Lowest number", min(numbers))
+            else:
+                print("No numbers were entered.")
+            break
 
-    numero = int(entered_user)
-    numbers.append(numero)
+        numero = int(entered_user)
+        numbers.append(numero)
 
 lower_checker()
 
@@ -225,5 +225,20 @@ most_duplicate()
 
 #Prog03: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the highest number
 
+def most_duplicate():
+    numbers = []
 
+    while True:
+        entered_user = input("Enter a number (or type a non-number to end): ")
 
+        if not entered_user.isdigit():
+            if numbers:  
+                print("Highest number entered is:", max(numbers))
+            else:
+                print("No numbers were entered.")
+            break
+
+        numero = int(entered_user)
+        numbers.append(numero)
+
+most_duplicate()
