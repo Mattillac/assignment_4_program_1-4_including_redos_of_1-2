@@ -205,15 +205,16 @@ def unique_numbers():
 unique_numbers()
 
 #Prog02: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the number with the most number of duplicate.
-def most_duplicate()
+def most_duplicate():
 numbers = []
 
 while True:
     entered_user = input("Enter a number (or type a non-number to end): ")
 
     if not entered_user.isdigit():
-        if numbers:  # Check if the list is not empty
-            print("Lowest number", min(numbers))
+        if numbers: 
+            most_common = max(set(numbers), key=numbers.count)
+            print("Most duplicated number", max(numbers))
         else:
             print("No numbers were entered.")
         break
@@ -225,7 +226,7 @@ most_duplicate()
 
 #Prog03: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the highest number
 
-def most_duplicate():
+def highest_number():
     numbers = []
 
     while True:
@@ -241,4 +242,14 @@ def most_duplicate():
         numero = int(entered_user)
         numbers.append(numero)
 
-most_duplicate()
+highest_number()
+
+#
+
+#Prog05: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the average.
+
+
+
+
+
+
