@@ -112,7 +112,29 @@ while odd_loop <= 100:
     print(odd_loop)
     odd_loop += 2
 
-#
+#Prog09: Create a program that print all the numbers starting from 0 to 100 except numbers ending in zero or ending five.
+for loop_except_zero in range(1,101):
+    if loop_except_zero % 5 != 0:
+        print(loop_except_zero)
+
+#Prog10: Create a program that ask user to input 2 numbers. Print all the numbers between the two numbers.
+numero_uno = int(input("Enter: "))
+numero_dos = int(input("Enter: "))
+ 
+start = min(numero_uno, numero_dos) + 1
+end = max(numero_uno, numero_dos)
+ 
+for count in range(start, end):
+    print(count, end = " ")
 
 #Batch 3
+
+#Prog01: Create a program that ask user to input 10 numbers. Display all numbers that don't have duplicate.
+
+
+
+
+
+
+
 #Batch 4
