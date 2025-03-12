@@ -160,17 +160,35 @@ def keep_asking():
             break
     
         numero = (entered_user)
-        
-    if numero in numbers:
-        print("Duplicate")
-    else:
-        print("Unique")
-        numbers.append(numero)
+
+        if numero in numbers:
+            print("Duplicate")
+        else:
+            print("Unique")
+            numbers.append(numero)
 
 keep_asking()
 
+#Prog04: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the lowest number
 
+def lower_counter():
+    numbers = []
+    while True:
+        entered_user = input("Enter a number(or type a non number to end): ")
 
+        if not entered_user.isdigit():
+            print("Invalid input. ending now...")
+            break
+    
+        numero = (entered_user)
+
+        if numero in numbers:
+            print("Lowest number", {min(numbers)})
+        print("Not the lowest number")
+            numbers.append(numero)
+        
+
+lower_counter()
 
 
 
