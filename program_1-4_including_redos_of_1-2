@@ -149,7 +149,13 @@ def display_only_first():
 
 display_only_first()
 
-
+#Prog03: Create a program that ask user to input a number, continue asking until the user input is invalid. Display "Unique" after input when the inputted number don't have duplicate. Display "Duplicate" after input when the inputted number have duplicate.
+def keep_asking():
+    numbers = []
+While True:
+    entered_user = input("Enter a number(or type a non number to end): ")
+if not entered_use .isdigit():
+    break
 
 
 
