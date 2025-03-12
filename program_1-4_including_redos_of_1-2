@@ -188,7 +188,7 @@ def lower_checker():
 
 lower_checker()
 
-#
+#pro 5
 
 #Batch 4
 
@@ -244,12 +244,26 @@ def highest_number():
 
 highest_number()
 
-#
+#pro 4
 
 #Prog05: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the average.
 
+def highest_number():
+    numbers = []
 
+    while True:
+        entered_user = input("Enter a number (or type a non-number to end): ")
 
+        if not entered_user.isdigit():
+            if numbers:  
+                answer = sum(numbers) / len(numbers)
+                print("Average number entered is:", (answer))
+            else:
+                print("No numbers were entered.")
+            break
 
+        numero = int(entered_user)
+        numbers.append(numero)
 
+highest_number()
 
