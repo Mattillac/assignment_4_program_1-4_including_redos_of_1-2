@@ -156,7 +156,14 @@ While True:
     entered_user = input("Enter a number(or type a non number to end): ")
 if not entered_user.isdigit():
     break
-(user_input)
+numero = (user_input)
+if numero in numbers:
+    print("Duplicate")
+else:
+    print("Unique")
+numbers.append(numero)
+
+keep_asking()
 
 
 
