@@ -1,0 +1,11 @@
+#Prog01: Create a program that ask user to input 10 numbers. Display all numbers that have duplicate.
+def unique_numbers():
+    numbers = []
+    for count in range(10):
+        number_entered = int(input(f"Enter number {count + 1}: "))
+        numbers.append(number_entered)
+
+    unique_numero = [number for number in numbers if numbers.count(number) != 1]
+    print("Here's the number/s that are duplicate/s:", unique_numero)
+
+unique_numbers()

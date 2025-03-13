@@ -1,0 +1,7 @@
+#Prog02: Create a program that ask user to input 2 numbers. Print "Not Equal" when the numbers are not the same.
+answer_a = int(input("Enter first: "))
+answer_b = int(input("Enter second: "))
+if answer_a != answer_b:
+    print(answer_a, "and", answer_b, "are not the same")
+elif answer_a == answer_b:
+    print("Both are equal")

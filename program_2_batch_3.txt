@@ -1,0 +1,7 @@
+#Prog02: Create a program that ask user to input 10 numbers. Display all numbers. For numbers with duplicate, display only the first entry.
+def display_only_first():
+    numbers = [int(input(f"Enter number {count + 1}: ")) for count in range(10)] 
+    filtered_numero = list(dict.fromkeys(numbers))
+    print(filtered_numero)
+
+display_only_first()

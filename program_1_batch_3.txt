@@ -1,0 +1,19 @@
+#Prog01: Create a program that ask user to input 10 numbers. Display all numbers that don't have duplicate.
+def unique_numbers():
+    numbers = []
+    for count in range(10):
+        number_entered = int(input(f"Enter number {count + 1}: "))
+        numbers.append(number_entered)
+
+    unique_numero = [number for number in numbers if numbers.count(number) == 1]
+    print("Here's the numbers that doesn't have a duplicate:", unique_numero)
+
+unique_numbers()
+
+#Prog02: Create a program that ask user to input 10 numbers. Display all numbers. For numbers with duplicate, display only the first entry.
+def display_only_first():
+    numbers = [int(input(f"Enter number {count + 1}: ")) for count in range(10)] 
+    filtered_numero = list(dict.fromkeys(numbers))
+    print(filtered_numero)
+
+display_only_first()

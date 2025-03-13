@@ -1,0 +1,5 @@
+#Prog02: Create a program that ask user to input 2 numbers. Print "Equal" when the numbers are the same.
+answer_a = int(input("Enter first: "))
+answer_b = int(input("Enter second: "))
+if answer_a == answer_b:
+    print("Equal")

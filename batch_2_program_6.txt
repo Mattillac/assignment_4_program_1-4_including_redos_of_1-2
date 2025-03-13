@@ -1,0 +1,6 @@
+#Prog06: Create a program that ask user to input 10 numbers. Print the result of the first number minus all of the remaining numbers.
+result = 0
+for how_many in range(10):
+    entered_num = (int(input(f" Enter num {how_many+1}: ")))
+    how_many - 1
+print(f' The result is {how_many}')
