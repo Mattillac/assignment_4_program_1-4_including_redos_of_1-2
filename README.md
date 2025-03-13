@@ -1,0 +1,1 @@
+Here is my programs 1 up to 4 including the redos of 1-2 and applying the standard python system. Well i admit that most of my code are things i learned search through the internet (specially batch 3. I struggled here i've been coding until past midnight), well you gotta know how it works, understand it, and apply it. So here is my project
