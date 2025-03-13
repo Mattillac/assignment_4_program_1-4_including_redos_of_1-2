@@ -188,7 +188,40 @@ def lower_checker():
 
 lower_checker()
 
-#pro 5
+#Prog05: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the number from lowest to highest. Clue: sort() function
+
+def lower_checker():
+    numbers = []
+
+    while True:
+        entered_user = input("Enter a number (or type a non-number to end): ")
+
+        if not entered_user.isdigit():
+            if numbers:  
+                numbers.sort()
+                print("Here is the lowest to highest order:", (numbers))
+            else:
+                print("No numbers were entered.")
+            break
+
+        numero = int(entered_user)
+        numbers.append(numero)
+
+lower_checker()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Batch 4
 
@@ -244,7 +277,24 @@ def highest_number():
 
 highest_number()
 
-#pro 4
+#Prog04: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the number from highest to lowest. Clue: sort() function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Prog05: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the average.
 
