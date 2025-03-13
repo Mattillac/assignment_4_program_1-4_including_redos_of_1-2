@@ -59,6 +59,10 @@ for loop_except_zero in range(1,101):
     if loop_except_zero % 10 != 0:
         print(loop_except_zero)
 
+
+
+
+
 #Batch 2 (REDO)
 
 #Prog01: Create a program that ask user to input 2 numbers. Print the smaller number.
@@ -126,7 +130,11 @@ end = max(numero_uno, numero_dos)
  
 for count in range(start, end):
     print(count, end = " ")
-        
+
+
+
+
+
 #Batch 3
 
 #Prog01: Create a program that ask user to input 10 numbers. Display all numbers that don't have duplicate.
@@ -207,17 +215,7 @@ def high_to_low_checker():
         numero = int(entered_user)
         numbers.append(numero)
 
-high_to_low_checker():
-
-
-
-
-
-
-
-
-
-
+high_to_low_checker()
 
 
 
@@ -239,21 +237,21 @@ unique_numbers()
 
 #Prog02: Create a program that ask user to input a number, continue asking until the user input is invalid. Display the number with the most number of duplicate.
 def most_duplicate():
-numbers = []
+    numbers = []
 
-while True:
-    entered_user = input("Enter a number (or type a non-number to end): ")
+    while True:
+        entered_user = input("Enter a number (or type a non-number to end): ")
 
-    if not entered_user.isdigit():
-        if numbers: 
-            most_common = max(set(numbers), key=numbers.count)
-            print("Most duplicated number", max(numbers))
-        else:
-            print("No numbers were entered.")
-        break
+        if not entered_user.isdigit():
+            if numbers: 
+                duplicated = max(set(numbers), key=numbers.count)
+                print("Most duplicated number", duplicated)
+            else:
+                print("No numbers were entered.")
+            break
 
-    numero = int(entered_user)
-    numbers.append(numero)
+        numero = int(entered_user)
+        numbers.append(numero)
 
 most_duplicate()
 
